@@ -1,20 +1,7 @@
-:root {
-  --main-background-color: #ffffff;
-  --sec-background-color: #f5f4fa;
-  --dark-background-color: #2f303a;
-  --accent-color: #2196f3;
-  --text-color: #212121;
-  --text-hero: #ffffff;
-  --sec-text-color: #757575;
-  --portfolio-buttons: #f5f4fa;
-  --social-icons: #afb1b8;
-
-  --animation-time: 250ms;
-  --animation-type: linear;
-}
+@import "utils/variables";
 
 body {
-  background-color: var(--main-background-color);
+  background-color: $main-background-color;
 }
 ul {
   margin: 0;
@@ -42,7 +29,7 @@ header {
 }
 
 .container-nav {
-  background-color: var(--main-background-color);
+  background-color: $main-background-color;
   align-items: center;
   display: flex;
   width: 1200px;
@@ -55,8 +42,8 @@ header {
 /* Logo */
 
 .logo-blue {
-  color: var(--accent-color);
-  font-family: Raleway;
+  color: $accent-color;
+  font-family: $main-font-family;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -65,8 +52,8 @@ header {
   text-align: left;
 }
 .logo {
-  color: var(--text-color);
-  font-family: Raleway;
+  color: $text-color;
+  font-family: $main-font-family;
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
@@ -92,14 +79,14 @@ header {
   padding-bottom: 25px;
   margin-top: 10px;
 
-  color: var(--text-color);
+  color: $text-color;
 
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
-  transition: color var(--animation-time) var(--animation-type);
+  transition: color $animation-time $animation-type;
 }
 
 .nav-link::after {
@@ -113,10 +100,10 @@ header {
   width: 100%;
   height: 4px;
   border-radius: 4px;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   opacity: 0;
 
-  transition: opacity var(--animation-time) var(--animation-type);
+  transition: opacity $animation-time $animation-type;
 }
 
 .current-link.nav-link::after,
@@ -131,7 +118,7 @@ header {
 
 .nav-link:focus,
 .nav-link:hover {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 /* ADDRRES */
@@ -161,19 +148,19 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
 
-  color: var(--sec-text-color);
+  color: $sec-text-color;
 
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
 
-  transition: color var(--animation-time) var(--animation-type);
+  transition: color $animation-time $animation-type;
 }
 
 .add-link:focus,
 .add-link:hover {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 /* ГЕРОЙ */
@@ -185,7 +172,7 @@ header {
       rgba(47, 48, 58, 0.4)
     ),
     url(../photo/hero-overlay-after.jpg);
-  background-color: var(--dark-background-color);
+  background-color: $dark-background-color;
   background-position: center;
 
   margin-left: auto;
@@ -203,8 +190,8 @@ header {
 }
 
 .hero-text {
-  color: var(--text-hero);
-  font-family: Roboto;
+  color: $text-hero;
+  font-family: $sec-font-family;
   font-size: 44px;
   font-style: normal;
   font-weight: 900;
@@ -226,13 +213,13 @@ header {
   border-style: none;
   outline: none;
 
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
 
-  color: var(--text-hero);
-  background-color: var(--accent-color);
+  color: $text-hero;
+  background-color: $accent-color;
 
   border: 1px solid transparent;
   border-radius: 4px;
@@ -252,7 +239,7 @@ header {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
-  background-color: var(--sec-background-color);
+  background-color: $sec-background-color;
 }
 
 .best-section {
@@ -274,7 +261,7 @@ header {
 
 .main-best-ul {
   display: flex;
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -294,7 +281,7 @@ header {
 
 .best-text {
   margin: 0px;
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -304,7 +291,7 @@ header {
 }
 
 p {
-  color: var(--sec-text-color);
+  color: $sec-text-color;
 }
 
 /* WWD */
@@ -324,7 +311,7 @@ p {
 
 .wwd {
   margin: 0px;
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -356,7 +343,7 @@ p {
 .shadow-text {
   margin: 0;
   padding-top: 27px;
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -394,11 +381,11 @@ p {
   width: 44px;
   height: 44px;
 
-  color: var(--social-icons);
-  background-color: var(--main-background-color);
+  color: $social-icons;
+  background-color: $main-background-color;
 
-  transition: color var(--animation-time) var(--animation-type);
-  transition: background-color var(--animation-time) var(--animation-type);
+  transition: color $animation-time $animation-type;
+  transition: background-color $animation-time $animation-type;
 }
 
 .social-icon {
@@ -409,14 +396,14 @@ p {
 
 .social-link:hover,
 .social-link:focus {
-  color: var(--main-background-color);
-  background-color: var(--accent-color);
+  color: $main-background-color;
+  background-color: $accent-color;
 }
 
 .team-section {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--sec-background-color);
+  background-color: $sec-background-color;
 }
 
 .team-container {
@@ -434,7 +421,7 @@ p {
 .team {
   padding: 0px;
   margin: 0px;
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -451,7 +438,7 @@ p {
 }
 
 .team-li {
-  background-color: var(--main-background-color);
+  background-color: $main-background-color;
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -463,7 +450,7 @@ p {
 }
 
 .name {
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -472,7 +459,7 @@ p {
   text-align: center;
 }
 .profession {
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -500,8 +487,8 @@ p {
 
 .clients-link:hover,
 .clients-link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: $accent-color;
+  border-color: $accent-color;
 }
 
 .clients-ul {
@@ -519,9 +506,9 @@ p {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: var(--social-icons);
+  color: $social-icons;
 
-  transition: color var(--animation-time) var(--animation-type);
+  transition: color $animation-time $animation-type;
 }
 
 .clients-icon {
@@ -534,7 +521,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  background-color: var(--dark-background-color);
+  background-color: $dark-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -562,7 +549,7 @@ footer {
 
 .follow-text {
   margin: 0;
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -591,15 +578,15 @@ footer {
   width: 44px;
   height: 44px;
 
-  color: var(--main-background-color);
+  color: $main-background-color;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color var(--animation-time) var(--animation-type);
+  transition: background-color $animation-time $animation-type;
 }
 
 .social-link-footer:hover,
 .social-link-footer:focus {
-  color: var(--main-background-color);
-  background-color: var(--accent-color);
+  color: $main-background-color;
+  background-color: $accent-color;
 }
 
 .social-block-footer > .social-li:not(:last-child) {
@@ -615,8 +602,8 @@ footer {
 }
 
 .logo-foot {
-  color: var(--accent-color);
-  font-family: Raleway;
+  color: $accent-color;
+  font-family: $main-font-family;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -625,8 +612,8 @@ footer {
   text-align: left;
 }
 .logo-white {
-  color: var(--text-hero);
-  font-family: Raleway;
+  color: $text-hero;
+  font-family: $main-font-family;
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
@@ -636,8 +623,8 @@ footer {
 }
 
 .addres {
-  color: var(--text-hero);
-  font-family: Roboto;
+  color: $text-hero;
+  font-family: $sec-font-family;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -647,7 +634,7 @@ footer {
 }
 .mail {
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -657,7 +644,7 @@ footer {
 }
 .number {
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -704,13 +691,13 @@ footer {
   border-style: none;
   outline: none;
 
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
 
-  color: var(--text-hero);
-  background-color: var(--accent-color);
+  color: $text-hero;
+  background-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   border: 1px solid transparent;
@@ -724,7 +711,7 @@ footer {
   margin-left: 10px;
   width: 24px;
   height: 24px;
-  fill: var(--text-hero);
+  fill: $text-hero;
 }
 
 /* PORTFOLIO BUTTONS */
@@ -765,33 +752,33 @@ footer {
   border-style: none;
   outline: none;
 
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
 
-  color: var(--text-color);
-  background-color: var(--portfolio-buttons);
+  color: $text-color;
+  background-color: $portfolio-buttons;
 
   border: 1px solid transparent;
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
   line-height: 26px;
-  transition: color var(--animation-time) var(--animation-type),
-    background-color var(--animation-time) var(--animation-type);
+  transition: color $animation-time $animation-type,
+    background-color $animation-time $animation-type;
 }
 
 .portfolio-button:focus,
 .portfolio-button:hover {
-  color: var(--main-background-color);
+  color: $main-background-color;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-button:focus,
 .portfolio-button:hover {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   cursor: pointer;
 }
 
@@ -811,7 +798,7 @@ footer {
   background: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: transform var(--animation-time) var(--animation-type);
+  transition: transform $animation-time $animation-type;
 }
 
 .photo-element:hover .portfolio-overlay {
@@ -825,7 +812,7 @@ footer {
 .ppt {
   padding-left: 24px;
   padding-top: 63px;
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -871,8 +858,8 @@ footer {
 }
 
 .name-project {
-  color: var(--text-color);
-  font-family: Roboto;
+  color: $text-color;
+  font-family: $sec-font-family;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -884,7 +871,7 @@ footer {
 }
 
 .about-project {
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -913,7 +900,7 @@ footer {
 .modal {
   width: 528px;
   height: 581px;
-  background-color: var(--main-background-color);
+  background-color: $main-background-color;
 
   position: absolute;
   top: 50%;
@@ -937,11 +924,11 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  fill: var(--text-color);
+  fill: $text-color;
 }
 
 .modal-close .modal-x:hover {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .modal-container {
@@ -952,7 +939,7 @@ footer {
 .modal-text {
   margin: 0;
   padding-bottom: 12px;
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -993,7 +980,7 @@ footer {
 
 .name-modal {
   margin-bottom: 4px;
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1007,7 +994,7 @@ footer {
 .phone-modal {
   margin-bottom: 4px;
   margin-top: 10px;
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1021,7 +1008,7 @@ footer {
 .mail-modal {
   margin-bottom: 4px;
   margin-top: 10px;
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1035,7 +1022,7 @@ footer {
 .text-extra {
   margin-bottom: 4px;
   margin-top: 10px;
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -1092,7 +1079,7 @@ footer {
 }
 
 .text-agre {
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1102,14 +1089,14 @@ footer {
 }
 
 .agre-link {
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .button-modal {
@@ -1124,12 +1111,12 @@ footer {
   border-style: none;
   outline: none;
 
-  font-family: Roboto;
+  font-family: $sec-font-family;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
 
-  color: var(--text-hero);
+  color: $text-hero;
 
   border: 1px solid transparent;
   border-radius: 4px;
@@ -1137,7 +1124,7 @@ footer {
   text-decoration: none;
   line-height: 26px;
 
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
