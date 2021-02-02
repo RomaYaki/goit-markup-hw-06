@@ -1,20 +1,6 @@
 @charset "UTF-8";
-:root {
-  --main-background-color: #ffffff;
-  --sec-background-color: #f5f4fa;
-  --dark-background-color: #2f303a;
-  --accent-color: #2196f3;
-  --text-color: #212121;
-  --text-hero: #ffffff;
-  --sec-text-color: #757575;
-  --portfolio-buttons: #f5f4fa;
-  --social-icons: #afb1b8;
-  --animation-time: 250ms;
-  --animation-type: linear;
-}
-
 body {
-  background-color: var(--main-background-color);
+  background-color: #ffffff;
 }
 
 ul {
@@ -43,7 +29,7 @@ header {
 }
 
 .container-nav {
-  background-color: var(--main-background-color);
+  background-color: #ffffff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -59,7 +45,7 @@ header {
 
 /* Logo */
 .logo-blue {
-  color: var(--accent-color);
+  color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -70,7 +56,7 @@ header {
 }
 
 .logo {
-  color: var(--text-color);
+  color: #212121;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -98,14 +84,14 @@ header {
   padding-top: 25px;
   padding-bottom: 25px;
   margin-top: 10px;
-  color: var(--text-color);
+  color: #212121;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
-  -webkit-transition: color var(--animation-time) var(--animation-type);
-  transition: color var(--animation-time) var(--animation-type);
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 
 .nav-link::after {
@@ -118,10 +104,10 @@ header {
   width: 100%;
   height: 4px;
   border-radius: 4px;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   opacity: 0;
-  -webkit-transition: opacity var(--animation-time) var(--animation-type);
-  transition: opacity var(--animation-time) var(--animation-type);
+  -webkit-transition: opacity 250ms linear;
+  transition: opacity 250ms linear;
 }
 
 .current-link.nav-link::after,
@@ -136,7 +122,7 @@ header {
 
 .nav-link:focus,
 .nav-link:hover {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 /* ADDRRES */
@@ -173,25 +159,25 @@ header {
           justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: var(--sec-text-color);
+  color: #757575;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  -webkit-transition: color var(--animation-time) var(--animation-type);
-  transition: color var(--animation-time) var(--animation-type);
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 
 .add-link:focus,
 .add-link:hover {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 /* ГЕРОЙ */
 .hero-container {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../photo/hero-overlay-after.jpg);
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../photo/hero-overlay-after.jpg);
-  background-color: var(--dark-background-color);
+  background-color: #2f303a;
   background-position: center;
   margin-left: auto;
   margin-right: auto;
@@ -207,7 +193,7 @@ header {
 }
 
 .hero-text {
-  color: var(--text-hero);
+  color: #ffffff;
   font-family: Roboto;
   font-size: 44px;
   font-style: normal;
@@ -230,8 +216,8 @@ header {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  color: var(--text-hero);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
   border: 1px solid transparent;
   border-radius: 4px;
   text-align: center;
@@ -254,7 +240,7 @@ header {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
-  background-color: var(--sec-background-color);
+  background-color: #f5f4fa;
 }
 
 .best-section {
@@ -310,7 +296,7 @@ header {
 }
 
 p {
-  color: var(--sec-text-color);
+  color: #757575;
 }
 
 /* WWD */
@@ -410,12 +396,12 @@ p {
           align-items: center;
   width: 44px;
   height: 44px;
-  color: var(--social-icons);
-  background-color: var(--main-background-color);
-  -webkit-transition: color var(--animation-time) var(--animation-type);
-  transition: color var(--animation-time) var(--animation-type);
-  -webkit-transition: background-color var(--animation-time) var(--animation-type);
-  transition: background-color var(--animation-time) var(--animation-type);
+  color: #afb1b8;
+  background-color: #ffffff;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
+  -webkit-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
 }
 
 .social-icon {
@@ -426,14 +412,14 @@ p {
 
 .social-link:hover,
 .social-link:focus {
-  color: var(--main-background-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .team-section {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--sec-background-color);
+  background-color: #f5f4fa;
 }
 
 .team-container {
@@ -472,7 +458,7 @@ p {
 }
 
 .team-li {
-  background-color: var(--main-background-color);
+  background-color: #ffffff;
   margin-right: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -523,8 +509,8 @@ p {
 
 .clients-link:hover,
 .clients-link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: #2196f3;
+  border-color: #2196f3;
 }
 
 .clients-ul {
@@ -552,9 +538,9 @@ p {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: var(--social-icons);
-  -webkit-transition: color var(--animation-time) var(--animation-type);
-  transition: color var(--animation-time) var(--animation-type);
+  color: #afb1b8;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
 }
 
 .clients-icon {
@@ -566,7 +552,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  background-color: var(--dark-background-color);
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -640,16 +626,16 @@ footer {
           align-items: center;
   width: 44px;
   height: 44px;
-  color: var(--main-background-color);
+  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-transition: background-color var(--animation-time) var(--animation-type);
-  transition: background-color var(--animation-time) var(--animation-type);
+  -webkit-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
 }
 
 .social-link-footer:hover,
 .social-link-footer:focus {
-  color: var(--main-background-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .social-block-footer > .social-li:not(:last-child) {
@@ -665,7 +651,7 @@ footer {
 }
 
 .logo-foot {
-  color: var(--accent-color);
+  color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -676,7 +662,7 @@ footer {
 }
 
 .logo-white {
-  color: var(--text-hero);
+  color: #ffffff;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -687,7 +673,7 @@ footer {
 }
 
 .addres {
-  color: var(--text-hero);
+  color: #ffffff;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -770,8 +756,8 @@ footer {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  color: var(--text-hero);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
@@ -785,7 +771,7 @@ footer {
   margin-left: 10px;
   width: 24px;
   height: 24px;
-  fill: var(--text-hero);
+  fill: #ffffff;
 }
 
 /* PORTFOLIO BUTTONS */
@@ -832,27 +818,27 @@ footer {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  color: var(--text-color);
-  background-color: var(--portfolio-buttons);
+  color: #212121;
+  background-color: #f5f4fa;
   border: 1px solid transparent;
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
   line-height: 26px;
-  -webkit-transition: color var(--animation-time) var(--animation-type), background-color var(--animation-time) var(--animation-type);
-  transition: color var(--animation-time) var(--animation-type), background-color var(--animation-time) var(--animation-type);
+  -webkit-transition: color 250ms linear, background-color 250ms linear;
+  transition: color 250ms linear, background-color 250ms linear;
 }
 
 .portfolio-button:focus,
 .portfolio-button:hover {
-  color: var(--main-background-color);
+  color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-button:focus,
 .portfolio-button:hover {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   cursor: pointer;
 }
 
@@ -871,10 +857,10 @@ footer {
   background: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform var(--animation-time) var(--animation-type);
-  transition: -webkit-transform var(--animation-time) var(--animation-type);
-  transition: transform var(--animation-time) var(--animation-type);
-  transition: transform var(--animation-time) var(--animation-type), -webkit-transform var(--animation-time) var(--animation-type);
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
 }
 
 .photo-element:hover .portfolio-overlay {
@@ -940,7 +926,7 @@ footer {
 }
 
 .name-project {
-  color: var(--text-color);
+  color: #212121;
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
@@ -981,7 +967,7 @@ footer {
 .modal {
   width: 528px;
   height: 581px;
-  background-color: var(--main-background-color);
+  background-color: #ffffff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1006,11 +992,11 @@ footer {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  fill: var(--text-color);
+  fill: #212121;
 }
 
 .modal-close .modal-x:hover {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .modal-container {
@@ -1182,7 +1168,7 @@ footer {
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .button-modal {
@@ -1199,13 +1185,13 @@ footer {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  color: var(--text-hero);
+  color: #ffffff;
   border: 1px solid transparent;
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
   line-height: 26px;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
