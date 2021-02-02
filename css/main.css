@@ -18,6 +18,10 @@ a {
   font-style: normal;
 }
 
+p {
+  color: #757575;
+}
+
 /* HEADER */
 header {
   border-bottom: 1px solid #eeeeee;
@@ -293,10 +297,6 @@ header {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
-}
-
-p {
-  color: #757575;
 }
 
 /* WWD */
