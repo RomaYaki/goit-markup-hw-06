@@ -1,21 +1,5 @@
 @import "utils/variables";
-
-body {
-  background-color: $main-background-color;
-}
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  font-style: normal;
-}
+@import "base/defaults";
 
 /* HEADER */
 
@@ -288,10 +272,6 @@ header {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
-}
-
-p {
-  color: $sec-text-color;
 }
 
 /* WWD */
