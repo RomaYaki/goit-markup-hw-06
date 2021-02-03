@@ -36,7 +36,7 @@
   border-radius: 4px;
   color: $social-icons;
 
-  transition: color $animation-time $animation-type;
+  @include transit(color);
 }
 
 .clients-icon {
