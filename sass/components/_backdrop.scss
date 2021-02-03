@@ -12,14 +12,12 @@
 }
 
 .modal {
+  @extend %window-centered;
   width: 528px;
   height: 581px;
   background-color: $main-background-color;
 
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .modal-close {
@@ -113,7 +111,6 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
-  /* identical to box height */
   letter-spacing: 0.01em;
 
   color: #757575;
