@@ -21,8 +21,8 @@
   color: $social-icons;
   background-color: $main-background-color;
 
-  transition: color $animation-time $animation-type;
-  transition: background-color $animation-time $animation-type;
+  @include transit(color);
+  @include transit(background-color);
 }
 
 .social-icon {
