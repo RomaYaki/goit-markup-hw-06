@@ -1,3 +1,10 @@
+.modal {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 body {
   background-color: #ffffff;
 }
@@ -265,10 +272,6 @@ footer {
   height: 581px;
   background-color: #ffffff;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .modal-close {
@@ -364,7 +367,6 @@ footer {
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
-  /* identical to box height */
   letter-spacing: 0.01em;
   color: #757575;
 }
@@ -1183,8 +1185,10 @@ header {
   text-align: center;
   text-decoration: none;
   line-height: 26px;
-  -webkit-transition: color 250ms linear, background-color 250ms linear;
-  transition: color 250ms linear, background-color 250ms linear;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
+  -webkit-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
 }
 
 .portfolio-button:focus,
