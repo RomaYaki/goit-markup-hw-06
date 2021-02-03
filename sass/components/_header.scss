@@ -65,7 +65,7 @@ header {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
-  transition: color $animation-time $animation-type;
+  @include transit(color);
 }
 
 .nav-link::after {
@@ -82,7 +82,7 @@ header {
   background-color: $accent-color;
   opacity: 0;
 
-  transition: opacity $animation-time $animation-type;
+  @include transit(opacity);
 }
 
 .current-link.nav-link::after,
@@ -134,7 +134,7 @@ header {
   font-style: normal;
   font-weight: 500;
 
-  transition: color $animation-time $animation-type;
+  @include transit(color);
 }
 
 .add-link:focus,
