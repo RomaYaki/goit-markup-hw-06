@@ -47,8 +47,8 @@
   text-align: center;
   text-decoration: none;
   line-height: 26px;
-  transition: color $animation-time $animation-type,
-    background-color $animation-time $animation-type;
+  @include transit(color);
+  @include transit(background-color);
 }
 
 .portfolio-button:focus,
